@@ -106,3 +106,5 @@ This is a fan-made Codex pet package assembled from local Wisdel materials.
 Original character art and source assets belong to their respective rights
 holders. This repository is intended for personal, non-commercial customization
 and is not an official Codex, OpenAI, or game asset release.
+
+## Thanks to https://github.com/OTAXIO/digit_maid
