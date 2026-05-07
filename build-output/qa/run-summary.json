@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "run_dir": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct",
+  "package": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct-package",
+  "spritesheet": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/final/spritesheet.webp",
+  "contact_sheet": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/qa/contact-sheet.png",
+  "review": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/qa/review.json",
+  "validation": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/final/validation.json",
+  "videos": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/qa/videos",
+  "source_sheet_pixelized": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/qa/source-sheet-pixelized.png"
+}
