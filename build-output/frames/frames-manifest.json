@@ -8,7 +8,7 @@
   "rows": [
     {
       "state": "idle",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/interact.gif",
+      "source": "source-materials/皮肤素材/可用素材/interact.gif",
       "source_frame_count": 46,
       "selected_indices": [
         0,
@@ -51,18 +51,18 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/05.png"
+        "build-output/frames/idle/00.png",
+        "build-output/frames/idle/01.png",
+        "build-output/frames/idle/02.png",
+        "build-output/frames/idle/03.png",
+        "build-output/frames/idle/04.png",
+        "build-output/frames/idle/05.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "running-right",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/move.gif",
+      "source": "source-materials/皮肤素材/可用素材/move.gif",
       "source_frame_count": 19,
       "selected_indices": [
         0,
@@ -115,14 +115,14 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/05.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/06.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/07.png"
+        "build-output/frames/running-right/00.png",
+        "build-output/frames/running-right/01.png",
+        "build-output/frames/running-right/02.png",
+        "build-output/frames/running-right/03.png",
+        "build-output/frames/running-right/04.png",
+        "build-output/frames/running-right/05.png",
+        "build-output/frames/running-right/06.png",
+        "build-output/frames/running-right/07.png"
       ],
       "method": "source-gif-pixelized"
     },
@@ -130,20 +130,20 @@
       "state": "running-left",
       "source": "running-right",
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/05.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/06.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/07.png"
+        "build-output/frames/running-left/00.png",
+        "build-output/frames/running-left/01.png",
+        "build-output/frames/running-left/02.png",
+        "build-output/frames/running-left/03.png",
+        "build-output/frames/running-left/04.png",
+        "build-output/frames/running-left/05.png",
+        "build-output/frames/running-left/06.png",
+        "build-output/frames/running-left/07.png"
       ],
       "method": "source-gif-pixelized-mirror"
     },
     {
       "state": "waving",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/fly.gif",
+      "source": "source-materials/皮肤素材/可用素材/fly.gif",
       "source_frame_count": 35,
       "selected_indices": [
         0,
@@ -176,16 +176,16 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/03.png"
+        "build-output/frames/waving/00.png",
+        "build-output/frames/waving/01.png",
+        "build-output/frames/waving/02.png",
+        "build-output/frames/waving/03.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "jumping",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/jump.gif",
+      "source": "source-materials/皮肤素材/可用素材/jump.gif",
       "source_frame_count": 42,
       "selected_indices": [
         0,
@@ -223,17 +223,17 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/04.png"
+        "build-output/frames/jumping/00.png",
+        "build-output/frames/jumping/01.png",
+        "build-output/frames/jumping/02.png",
+        "build-output/frames/jumping/03.png",
+        "build-output/frames/jumping/04.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "failed",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/die.gif",
+      "source": "source-materials/皮肤素材/可用素材/die.gif",
       "source_frame_count": 20,
       "selected_indices": [
         0,
@@ -286,20 +286,20 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/05.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/06.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/07.png"
+        "build-output/frames/failed/00.png",
+        "build-output/frames/failed/01.png",
+        "build-output/frames/failed/02.png",
+        "build-output/frames/failed/03.png",
+        "build-output/frames/failed/04.png",
+        "build-output/frames/failed/05.png",
+        "build-output/frames/failed/06.png",
+        "build-output/frames/failed/07.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "waiting",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/sit.gif",
+      "source": "source-materials/皮肤素材/可用素材/sit.gif",
       "source_frame_count": 23,
       "selected_indices": [
         0,
@@ -342,18 +342,18 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/05.png"
+        "build-output/frames/waiting/00.png",
+        "build-output/frames/waiting/01.png",
+        "build-output/frames/waiting/02.png",
+        "build-output/frames/waiting/03.png",
+        "build-output/frames/waiting/04.png",
+        "build-output/frames/waiting/05.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "running",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/special.gif",
+      "source": "source-materials/皮肤素材/可用素材/special.gif",
       "source_frame_count": 42,
       "selected_indices": [
         0,
@@ -396,18 +396,18 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/05.png"
+        "build-output/frames/running/00.png",
+        "build-output/frames/running/01.png",
+        "build-output/frames/running/02.png",
+        "build-output/frames/running/03.png",
+        "build-output/frames/running/04.png",
+        "build-output/frames/running/05.png"
       ],
       "method": "source-gif-pixelized"
     },
     {
       "state": "review",
-      "source": "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材/special1.gif",
+      "source": "source-materials/皮肤素材/可用素材/special1.gif",
       "source_frame_count": 40,
       "selected_indices": [
         10,
@@ -450,15 +450,15 @@
         "bottom_padding": 6
       },
       "frames": [
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/00.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/01.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/02.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/03.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/04.png",
-        "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/05.png"
+        "build-output/frames/review/00.png",
+        "build-output/frames/review/01.png",
+        "build-output/frames/review/02.png",
+        "build-output/frames/review/03.png",
+        "build-output/frames/review/04.png",
+        "build-output/frames/review/05.png"
       ],
       "method": "source-gif-pixelized"
     }
   ],
-  "source_sheet_pixelized": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/qa/source-sheet-pixelized.png"
+  "source_sheet_pixelized": "build-output/qa/source-sheet-pixelized.png"
 }

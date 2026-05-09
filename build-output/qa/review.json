@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "frames_root": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames",
+  "frames_root": "build-output/frames",
   "errors": [],
   "warnings": [
     "idle used extraction method source-gif-pixelized; component extraction is preferred",
@@ -32,7 +32,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/00.png",
+          "file": "build-output/frames/idle/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21454,
@@ -47,7 +47,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/01.png",
+          "file": "build-output/frames/idle/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23987,
@@ -62,7 +62,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/02.png",
+          "file": "build-output/frames/idle/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21779,
@@ -77,7 +77,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/03.png",
+          "file": "build-output/frames/idle/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21668,
@@ -92,7 +92,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/04.png",
+          "file": "build-output/frames/idle/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23629,
@@ -107,7 +107,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/idle/05.png",
+          "file": "build-output/frames/idle/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21612,
@@ -135,7 +135,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/00.png",
+          "file": "build-output/frames/running-right/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21801,
@@ -150,7 +150,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/01.png",
+          "file": "build-output/frames/running-right/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22764,
@@ -165,7 +165,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/02.png",
+          "file": "build-output/frames/running-right/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22667,
@@ -180,7 +180,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/03.png",
+          "file": "build-output/frames/running-right/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21421,
@@ -195,7 +195,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/04.png",
+          "file": "build-output/frames/running-right/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21794,
@@ -210,7 +210,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/05.png",
+          "file": "build-output/frames/running-right/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 24147,
@@ -225,7 +225,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/06.png",
+          "file": "build-output/frames/running-right/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22305,
@@ -240,7 +240,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-right/07.png",
+          "file": "build-output/frames/running-right/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21672,
@@ -268,7 +268,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/00.png",
+          "file": "build-output/frames/running-left/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21801,
@@ -283,7 +283,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/01.png",
+          "file": "build-output/frames/running-left/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22764,
@@ -298,7 +298,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/02.png",
+          "file": "build-output/frames/running-left/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22667,
@@ -313,7 +313,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/03.png",
+          "file": "build-output/frames/running-left/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21421,
@@ -328,7 +328,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/04.png",
+          "file": "build-output/frames/running-left/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21794,
@@ -343,7 +343,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/05.png",
+          "file": "build-output/frames/running-left/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 24147,
@@ -358,7 +358,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/06.png",
+          "file": "build-output/frames/running-left/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22305,
@@ -373,7 +373,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running-left/07.png",
+          "file": "build-output/frames/running-left/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21672,
@@ -401,7 +401,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/00.png",
+          "file": "build-output/frames/waving/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22168,
@@ -416,7 +416,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/01.png",
+          "file": "build-output/frames/waving/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23476,
@@ -431,7 +431,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/02.png",
+          "file": "build-output/frames/waving/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23812,
@@ -446,7 +446,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waving/03.png",
+          "file": "build-output/frames/waving/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 24191,
@@ -479,7 +479,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/00.png",
+          "file": "build-output/frames/jumping/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21520,
@@ -494,7 +494,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/01.png",
+          "file": "build-output/frames/jumping/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22255,
@@ -509,7 +509,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/02.png",
+          "file": "build-output/frames/jumping/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 18175,
@@ -524,7 +524,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/03.png",
+          "file": "build-output/frames/jumping/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21549,
@@ -539,7 +539,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/jumping/04.png",
+          "file": "build-output/frames/jumping/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21594,
@@ -567,7 +567,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/00.png",
+          "file": "build-output/frames/failed/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21529,
@@ -582,7 +582,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/01.png",
+          "file": "build-output/frames/failed/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22106,
@@ -597,7 +597,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/02.png",
+          "file": "build-output/frames/failed/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23123,
@@ -612,7 +612,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/03.png",
+          "file": "build-output/frames/failed/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 24755,
@@ -627,7 +627,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/04.png",
+          "file": "build-output/frames/failed/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23703,
@@ -642,7 +642,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/05.png",
+          "file": "build-output/frames/failed/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23651,
@@ -657,7 +657,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/06.png",
+          "file": "build-output/frames/failed/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23478,
@@ -672,7 +672,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/failed/07.png",
+          "file": "build-output/frames/failed/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22153,
@@ -700,7 +700,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/00.png",
+          "file": "build-output/frames/waiting/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 20195,
@@ -715,7 +715,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/01.png",
+          "file": "build-output/frames/waiting/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21474,
@@ -730,7 +730,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/02.png",
+          "file": "build-output/frames/waiting/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 20572,
@@ -745,7 +745,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/03.png",
+          "file": "build-output/frames/waiting/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 20431,
@@ -760,7 +760,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/04.png",
+          "file": "build-output/frames/waiting/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21243,
@@ -775,7 +775,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/waiting/05.png",
+          "file": "build-output/frames/waiting/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 20276,
@@ -803,7 +803,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/00.png",
+          "file": "build-output/frames/running/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21529,
@@ -818,7 +818,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/01.png",
+          "file": "build-output/frames/running/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23073,
@@ -833,7 +833,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/02.png",
+          "file": "build-output/frames/running/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21501,
@@ -848,7 +848,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/03.png",
+          "file": "build-output/frames/running/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22328,
@@ -863,7 +863,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/04.png",
+          "file": "build-output/frames/running/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 22765,
@@ -878,7 +878,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/running/05.png",
+          "file": "build-output/frames/running/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21621,
@@ -906,7 +906,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/00.png",
+          "file": "build-output/frames/review/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 20609,
@@ -921,7 +921,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/01.png",
+          "file": "build-output/frames/review/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21669,
@@ -936,7 +936,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/02.png",
+          "file": "build-output/frames/review/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21587,
@@ -951,7 +951,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/03.png",
+          "file": "build-output/frames/review/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 23596,
@@ -966,7 +966,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/04.png",
+          "file": "build-output/frames/review/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21654,
@@ -981,7 +981,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/lawrenclia/Documents/Codex/2026-05-06/skill-installer-hatch-pet/output/hatch-pet/wisdel-pixel-direct/frames/review/05.png",
+          "file": "build-output/frames/review/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 21666,

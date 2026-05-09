@@ -1,0 +1,6 @@
+{
+  "id": "wisdel",
+  "displayName": "Wisdel",
+  "description": "A directly pixelized Wisdel desktop companion built from the supplied digit_maid GIF materials.",
+  "spritesheetPath": "spritesheet.webp"
+}

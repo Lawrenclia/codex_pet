@@ -1,39 +1,36 @@
-# Wisdel Codex Pet
+# Wisdel Codex 宠物
 
-A custom animated Codex pet built from the Wisdel desktop companion materials in
-`digit_maid`. The pet is assembled by directly pixelizing the original GIF
-frames, so the character identity, orange eyes, expressions, and tiny chibi
-silhouette stay close to the source art instead of being redrawn.
+![Wisdel 动画预览](build-output/qa/contact-sheet.png)
 
-![Wisdel animation contact sheet](build-output/qa/contact-sheet.png)
+这是一个基于 Wisdel 桌面伴侣素材制作的自定义 Codex 动画宠物。当前版本直接像素化原始 GIF 帧，尽量保留角色的橙色眼睛、表情、黑色轮廓和小比例 Q 版剪影，而不是重新绘制角色。
 
-## What Is Included
+## 项目内容
 
-This repository is a full bundle, not only the final two pet files.
+这个仓库保留了从源素材到最终可安装包的完整整理结果，不只是最后两个宠物文件。
 
-| Path | Purpose |
+| 路径 | 说明 |
 | --- | --- |
-| `installable-pet/` | Minimal package that Codex can load directly. |
-| `installable-pet/pet.json` | Codex pet manifest. |
-| `installable-pet/spritesheet.webp` | Final 8x9 animated spritesheet. |
-| `build-output/` | Full build output: extracted frames, final atlas, QA files, and previews. |
-| `build-output/qa/contact-sheet.png` | Visual QA sheet for all animation rows. |
-| `build-output/qa/videos/` | Per-state preview videos. |
-| `source-materials/皮肤素材/` | Original Wisdel material folder used as input. |
-| `references/maidbit-materials/` | Reference sheets generated while preparing the pet. |
-| `tools/build_wisdel_pixel_pet.py` | Rebuild script used for this direct-pixelization version. |
+| `installable-pet/` | Codex 可直接加载的最小安装包。 |
+| `installable-pet/pet.json` | 宠物清单文件。 |
+| `installable-pet/spritesheet.webp` | 最终 8x9 动画精灵图。 |
+| `build-output/` | 完整构建产物，包括拆帧、最终图集、质检文件和预览视频。 |
+| `build-output/final/` | 最终图集和对应清单。 |
+| `build-output/frames/` | 按动画状态拆出的单帧 PNG。 |
+| `build-output/qa/contact-sheet.png` | 全部动画行的质检总览图。 |
+| `build-output/qa/videos/` | 每个状态的预览视频。 |
+| `source-materials/皮肤素材/` | 制作时使用的原始 Wisdel 素材。 |
+| `references/maidbit-materials/` | 制作过程中生成或保留的参考图。 |
+| `tools/build_wisdel_pixel_pet.py` | 用于重新构建当前像素化版本的脚本。 |
 
-## Install
+## 安装
 
-Copy the installable package into Codex's local pet directory:
+把可安装包复制到 Codex 本地宠物目录：
 
 ```bash
 ditto installable-pet ~/.codex/pets/wisdel
 ```
 
-Then restart Codex if the pet list does not refresh immediately.
-
-After installation, the expected files are:
+如果宠物列表没有立刻刷新，重启 Codex 即可。安装完成后，目标目录应包含：
 
 ```text
 ~/.codex/pets/wisdel/
@@ -41,70 +38,61 @@ After installation, the expected files are:
   spritesheet.webp
 ```
 
-## Animation Rows
+## 动画行
 
-Codex pets use a fixed 8-column by 9-row atlas. This pet fills the rows as:
+Codex 宠物使用固定的 8 列 9 行图集。当前图集的行分配如下：
 
-| Row | State | Source behavior |
+| 行 | 状态 | 来源动作 |
 | --- | --- | --- |
-| 0 | `idle` | Calm blink and breathing loop. |
-| 1 | `running-right` | Front-facing active motion, used for right movement. |
-| 2 | `running-left` | Mirrored movement row. |
-| 3 | `waving` | Excited greeting-style motion. |
-| 4 | `jumping` | Jump / surprise motion. |
-| 5 | `failed` | Shocked failed-state reaction. |
-| 6 | `waiting` | Patient sitting loop. |
-| 7 | `running` | Busy task-running loop. |
-| 8 | `review` | Focused review loop with glasses expression. |
+| 0 | `idle` | 平静眨眼和呼吸循环。 |
+| 1 | `running-right` | 正面活跃动作，用于向右移动。 |
+| 2 | `running-left` | 由向右移动行镜像得到。 |
+| 3 | `waving` | 偏打招呼感的兴奋动作。 |
+| 4 | `jumping` | 跳跃或惊讶动作。 |
+| 5 | `failed` | 失败状态的震惊反应。 |
+| 6 | `waiting` | 坐下等待循环。 |
+| 7 | `running` | 任务运行中的忙碌循环。 |
+| 8 | `review` | 带眼镜表情的专注审阅循环。 |
 
-Codex does not randomly play every row at all times. In normal idle state you
-will mostly see the `idle` row; other rows appear when Codex enters matching
-states such as running, waiting, failure, review, hover, or movement.
+Codex 不会在任何时候随机播放所有行。普通闲置时主要播放 `idle`，其他行会在运行、等待、失败、审阅、悬停或移动等状态下触发。
 
-## Rebuild
+## 重新构建
 
-The pet was generated with:
+在仓库根目录运行：
 
 ```bash
 python3 tools/build_wisdel_pixel_pet.py
 ```
 
-The script reads the Wisdel GIF materials, preserves their alpha channel,
-pixelizes each selected frame, normalizes body size across rows, builds the
-Codex spritesheet, renders QA previews, and writes a minimal installable pet
-package.
+脚本会读取 `source-materials/皮肤素材/可用素材/` 中的 GIF，保留透明通道，挑选并像素化每个状态的帧，统一角色尺寸，生成 Codex 精灵图、质检预览和最小安装包。
 
-If you move this repository to a different machine, update the source path in
-`tools/build_wisdel_pixel_pet.py` or point it at the bundled
-`source-materials/皮肤素材/可用素材` directory before rebuilding.
+重新构建后，主要输出位置为：
 
-## QA
+| 路径 | 内容 |
+| --- | --- |
+| `build-output/final/` | 最终图集、清单和图集校验结果。 |
+| `build-output/qa/` | contact sheet、审阅 JSON、运行摘要和预览视频。 |
+| `installable-pet/` | 可复制到 Codex 宠物目录的安装包。 |
 
-Generated QA artifacts:
+## 质检产物
 
-- Contact sheet: `build-output/qa/contact-sheet.png`
-- Source sheet preview: `build-output/qa/source-sheet-pixelized.png`
-- Frame review JSON: `build-output/qa/review.json`
-- Atlas validation JSON: `build-output/final/validation.json`
-- Preview videos: `build-output/qa/videos/`
+当前保留的质检文件包括：
 
-The final spritesheet passed atlas validation with no errors or warnings.
+- `build-output/qa/contact-sheet.png`
+- `build-output/qa/source-sheet-pixelized.png`
+- `build-output/qa/review.json`
+- `build-output/qa/run-summary.json`
+- `build-output/qa/videos/`
 
-## Notes
+## 备注
 
-- The black outline is preserved from the original transparent GIF frames.
-- The source GIF alpha channel is used directly; the build does not chroma-key
-  black, because that would damage Wisdel's outline and dark costume details.
-- The current movement rows are front-facing motion adapted to Codex's row
-  layout, because the source set does not include a true side-running cycle.
-- `special0.gif` is kept in the source materials but not used in the final pet,
-  because it contains a second character and a much larger composition.
+- 黑色轮廓来自原始透明 GIF 帧，构建时会保留。
+- 构建脚本直接使用源 GIF 的 alpha 通道，不会用黑色抠图，避免破坏角色轮廓和深色服装细节。
+- 当前移动行使用正面动作适配 Codex 的行布局，因为源素材里没有真正的侧面奔跑循环。
+- `special0.gif` 保留在源素材中，但没有进入最终宠物，因为它包含第二个角色，整体构图也更大。
 
-## License And Credits
+## 授权与致谢
 
-This is a fan-made Codex pet package assembled from local Wisdel materials.
-Original character art and source assets belong to their respective rights
-holders. This repository is intended for personal, non-commercial customization
-and is not an official Codex, OpenAI, or game asset release.
+这是一个由本地 Wisdel 素材整理制作的同人 Codex 宠物包。原始角色美术和素材版权归各自权利方所有。本仓库仅用于个人、非商业的 Codex 自定义，不是 Codex、OpenAI 或游戏官方素材发布。
 
-## Thanks to https://github.com/OTAXIO/digit_maid
+感谢 [OTAXIO/digit_maid](https://github.com/OTAXIO/digit_maid) 项目提供的素材参考。

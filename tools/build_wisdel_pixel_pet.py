@@ -25,17 +25,47 @@ BOTTOM_PADDING = 6
 PIXEL_BLOCK = 3
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-SOURCE_DIR = Path(
-    "/Users/lawrenclia/Documents/otaxio/digit_maid/resource/wisdel/皮肤素材/可用素材"
-)
+SOURCE_DIR = WORKSPACE / "source-materials" / "皮肤素材" / "可用素材"
 SOURCE_SHEET = (
     WORKSPACE
     / "references"
     / "maidbit-materials"
     / "available-materials-reference-sheet.png"
 )
-RUN_DIR = WORKSPACE / "output" / "hatch-pet" / "wisdel-pixel-direct"
-HATCH_SCRIPTS = Path("/Users/lawrenclia/.codex/skills/hatch-pet/scripts")
+RUN_DIR = WORKSPACE / "build-output"
+HATCH_SCRIPTS = Path.home() / ".codex" / "skills" / "hatch-pet" / "scripts"
+
+
+def repo_path(path: Path) -> str:
+    try:
+        return path.resolve().relative_to(WORKSPACE).as_posix()
+    except ValueError:
+        return str(path)
+
+
+def relativize_workspace_paths(value: object) -> object:
+    if isinstance(value, str):
+        workspace = str(WORKSPACE)
+        if value == workspace:
+            return "."
+        if value.startswith(workspace + "/"):
+            return value[len(workspace) + 1 :]
+        return value
+    if isinstance(value, list):
+        return [relativize_workspace_paths(item) for item in value]
+    if isinstance(value, dict):
+        return {key: relativize_workspace_paths(item) for key, item in value.items()}
+    return value
+
+
+def rewrite_json_paths(path: Path) -> None:
+    if not path.is_file():
+        return
+    data = json.loads(path.read_text(encoding="utf-8"))
+    path.write_text(
+        json.dumps(relativize_workspace_paths(data), indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 @dataclass(frozen=True)
@@ -202,10 +232,10 @@ def make_row_frames(spec: RowSpec, frames_root: Path) -> dict[str, object]:
         cell = frame_to_cell(frame, motion_offset=offsets[column])
         output = state_dir / f"{column:02d}.png"
         cell.save(output)
-        outputs.append(str(output))
+        outputs.append(repo_path(output))
     return {
         "state": spec.state,
-        "source": str(source_path),
+        "source": repo_path(source_path),
         "source_frame_count": len(all_frames),
         "selected_indices": indices,
         "motion_offsets": offsets,
@@ -231,7 +261,7 @@ def mirror_row(source_state: str, target_state: str, frames_root: Path, count: i
             mirrored = opened.convert("RGBA").transpose(Image.Transpose.FLIP_LEFT_RIGHT)
         output = target_dir / f"{column:02d}.png"
         mirrored.save(output)
-        outputs.append(str(output))
+        outputs.append(repo_path(output))
     return {
         "state": target_state,
         "source": source_state,
@@ -264,7 +294,7 @@ def write_request() -> None:
             "digit_maid GIF materials."
         ),
         "source_mode": "direct-source-gif-pixelization",
-        "source_dir": str(SOURCE_DIR),
+        "source_dir": repo_path(SOURCE_DIR),
     }
     (RUN_DIR / "pet_request.json").write_text(
         json.dumps(request, indent=2, ensure_ascii=False) + "\n",
@@ -277,7 +307,7 @@ def main() -> None:
     frames_root = RUN_DIR / "frames"
     final_dir = RUN_DIR / "final"
     qa_dir = RUN_DIR / "qa"
-    package_dir = WORKSPACE / "output" / "hatch-pet" / "wisdel-pixel-direct-package"
+    package_dir = WORKSPACE / "installable-pet"
 
     clean_dir(RUN_DIR)
     clean_dir(package_dir)
@@ -310,7 +340,7 @@ def main() -> None:
                     "stable_hover_size": True,
                 },
                 "rows": manifest_rows,
-                "source_sheet_pixelized": str(pixelized_sheet) if pixelized_sheet else None,
+                "source_sheet_pixelized": repo_path(pixelized_sheet) if pixelized_sheet else None,
             },
             indent=2,
             ensure_ascii=False,
@@ -331,6 +361,7 @@ def main() -> None:
         ],
         check=False,
     )
+    rewrite_json_paths(review_path)
     run(
         [
             sys.executable,
@@ -338,7 +369,7 @@ def main() -> None:
             "--frames-root",
             str(frames_root),
             "--output",
-            str(final_dir / "spritesheet.png"),
+            str(decoded_dir / "spritesheet.png"),
             "--webp-output",
             str(final_dir / "spritesheet.webp"),
         ]
@@ -352,6 +383,7 @@ def main() -> None:
             str(final_dir / "validation.json"),
         ]
     )
+    rewrite_json_paths(final_dir / "validation.json")
     run(
         [
             sys.executable,
@@ -392,17 +424,18 @@ def main() -> None:
             "--force",
         ]
     )
+    shutil.copyfile(package_dir / "pet.json", final_dir / "pet.json")
 
     summary = {
         "ok": True,
-        "run_dir": str(RUN_DIR),
-        "package": str(package_dir),
-        "spritesheet": str(final_dir / "spritesheet.webp"),
-        "contact_sheet": str(qa_dir / "contact-sheet.png"),
-        "review": str(review_path),
-        "validation": str(final_dir / "validation.json"),
-        "videos": str(qa_dir / "videos") if ffmpeg else None,
-        "source_sheet_pixelized": str(pixelized_sheet) if pixelized_sheet else None,
+        "run_dir": repo_path(RUN_DIR),
+        "package": repo_path(package_dir),
+        "spritesheet": repo_path(final_dir / "spritesheet.webp"),
+        "contact_sheet": repo_path(qa_dir / "contact-sheet.png"),
+        "review": repo_path(review_path),
+        "validation": repo_path(final_dir / "validation.json"),
+        "videos": repo_path(qa_dir / "videos") if ffmpeg else None,
+        "source_sheet_pixelized": repo_path(pixelized_sheet) if pixelized_sheet else None,
     }
     (qa_dir / "run-summary.json").write_text(
         json.dumps(summary, indent=2, ensure_ascii=False) + "\n",
